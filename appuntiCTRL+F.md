@@ -1,3 +1,114 @@
+## Indice
+
+1. **Utilizzo di Copilot e Strumenti di Codifica**
+   - Copilot, passo passo
+   - Shortcut utili: `CTRL + I`, `CTRL + /`, `@`
+   - Chat e commenti
+   - Tenere aperti i codici
+
+2. **HTML**
+   1. **Introduzione all'HTML**
+      - Definizione e scopo
+   2. **Struttura di base di un documento HTML**
+      - Elementi di base: `<!DOCTYPE html>`, `<html>`, `<head>`, `<meta>`, `<title>`, `<body>`
+   3. **Spiegazione della Struttura di Base**
+      - Descrizione di ogni elemento
+   4. **Tag principali**
+      - Tag di struttura: `<html>`, `<head>`, `<title>`, `<body>`
+      - Tag di testo: `<h1> ... <h6>`, `<p>`, `<br>`, `<hr>`
+      - Esempi di Tag di Testo
+   5. **Link**
+      - Utilizzo del tag `<a>`
+   6. **Immagini**
+      - Utilizzo del tag `<img>`
+      - Esempi di Immagini
+   7. **Liste**
+      - Liste non ordinate (`<ul>`, `<li>`)
+      - Liste ordinate (`<ol>`, `<li>`)
+      - Esempi di Liste
+   8. **Tabelle**
+      - Struttura delle tabelle (`<table>`, `<tr>`, `<th>`, `<td>`)
+      - Esempi di Tabelle
+   9. **Conclusione**
+      - Riflessione sull'importanza dell'HTML
+   10. **Risorse Aggiuntive**
+
+3. **CSS**
+   1. **Selettori CSS**
+      - Selettori di tipo (`*`)
+      - Selettori di classe (`.class`)
+      - Selettori di attributi (`input[type="email"]`)
+      - Pseudo-elementi (`:before`, `:after`)
+      - Pseudo-classi (`:hover`, `:visited`, `:first-child`, `:last-child`)
+   2. **Global Styles**
+      - Reset CSS (`* { margin: 0; padding: 0; box-sizing: border-box; }`)
+   3. **Posizionamento degli Elementi**
+      - `position: relative`
+      - `position: absolute`
+   4. **Classi e ID**
+      - Definizione e utilizzo delle classi e degli ID (`.square`, `.square.green`, `.square.yellow`)
+   5. **Esempi Reali**
+      - Esempi di stili CSS applicati
+
+4. **Progetti e Applicazioni**
+   1. **Progetto: Curriculum con HTML e CSS**
+      - Creazione di un curriculum
+      - Collegamento a LinkedIn e GitHub
+
+5. **DNS e Trasmissione dei Dati**
+   - Funzionamento del DNS
+   - Trasmissione dei dati su Internet
+   - Modello OSI
+
+6. **Slack**
+   1. **Versionamento**
+      - Major, Minor, Patch
+   2. **Scrivere un Ticket su Slack**
+      - Consigli per una comunicazione efficace
+
+7. **Git**
+   1. **Git e Versionamento**
+      - Utilizzo di `git graph`
+      - Definizione di Branch
+      - Esempi di URL per risorse
+
+8. **Struttura HTML: 1.1**
+   - Esempio di struttura di un documento HTML con vari tag (`<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<aside>`, `<footer>`)
+
+9. **Tag HTML e Attributi**
+   - Attributi comuni: `class`, `id`, `style`, `title`, `href`, `src`, `alt`, `type`, `value`, `name`
+
+10. **Entity Code**
+    - Utilizzo di codici entità per simboli speciali
+
+11. **Utilizzo del Tag `<span>`**
+    - Quando e come utilizzare `<span>`
+
+12. **Esempi di Paragrafi**
+    - Struttura e utilizzo dei paragrafi con tag `<p>`
+
+13. **Collegamento tra HTML e CSS**
+    - Utilizzo del tag `<link>` per collegare un file CSS a un file HTML
+
+14. **Specificità CSS**
+    - Regole di specificità per l'applicazione degli stili CSS
+
+15. **Text-align con immagini e testi**
+    - Tecniche di allineamento
+
+16. **Risalire e scendere nelle cartelle (directories)**
+    - Utilizzo dei percorsi relativi per risalire e scendere nelle directory
+
+17. **Immagini e Variabili CSS**
+    - Tecniche per gestire immagini e variabili CSS
+
+18. **Valori Predefiniti e Unità di Misura**
+    - Unità di misura CSS (`%`, `rem`, `em`, `px`, `vh`, `vw`)
+
+19. **Simboli e Scorciatoie**
+    - Scorciatoie per simboli e caratteri speciali (backtick, tilde)
+
+
 //riga 370 nuovi
 
 
@@ -566,14 +677,13 @@ Ricordarsi sempre di azzerare margini e padding e impostare il box-sizing per ev
 </p>
 ```
 
----
+---separatore organizzato
 
-Questi appunti dovrebbero ora contenere tutte le tue informazioni originali, arricchite con spiegazioni aggiuntive dove necessario. Se c'è altro da aggiungere o modificare, fammi sapere!
+# Tipi di Selezioni
 
+## Esempio di HTML:
 
-## TIPI DI SELEZIONI
-Esempio di HTML:
-<!-- Esempio HTML -->
+```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -583,7 +693,7 @@ Esempio di HTML:
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <!--ID si indica con #-->
+    <!-- ID si indica con # -->
     <div id="main" class="container red">Contenuto principale</div>
     <div class="container">Altro contenuto</div>
     <div class="container red">Contenuto rosso</div>
@@ -595,8 +705,12 @@ Esempio di HTML:
     <div class="child">Non figlio</div>
 </body>
 </html>
+```
 
-/* Esempio CSS */ <!--# ID MAIN-->
+## Esempio di CSS:
+
+```css
+/* ID MAIN */
 #main.container.red {
     background-color: yellow;
     color: white;
@@ -615,25 +729,37 @@ Esempio di HTML:
 .container > .child {
     color: blue;
 }
+```
 
-Spiegazione
-HTML:
+### Spiegazione:
 
-id="main": Identificatore unico per il div principale.
-class="container red": Classi combinate per selezioni specifiche.
-class="container blue": Un'altra combinazione di classi.
-Struttura a livelli per mostrare l'uso del selettore figlio.
-CSS:
+#### HTML:
 
-#main.container.red: Seleziona l'elemento con ID main e classi container e red.
-.container.red: Seleziona gli elementi con classi container e red.
-.container.blue: Seleziona gli elementi con classi container e blue.
-.container > .child: Seleziona i figli diretti di container con classe child.
+- `id="main"`: Identificatore unico per il div principale.
+- `class="container red"`: Classi combinate per selezioni specifiche.
+- `class="container blue"`: Un'altra combinazione di classi.
+- Struttura a livelli per mostrare l'uso del selettore figlio.
 
-come collegare HTML con css TRAMITE LINK
+#### CSS:
 
-A parita di specificita vale di più quello pèiù in basso quello più specifico vale di più
-##SPECIFICITA
+- `#main.container.red`: Seleziona l'elemento con ID `main` e classi `container` e `red`.
+- `.container.red`: Seleziona gli elementi con classi `container` e `red`.
+- `.container.blue`: Seleziona gli elementi con classi `container` e `blue`.
+- `.container > .child`: Seleziona i figli diretti di `container` con classe `child`.
+
+## Collegamento tra HTML e CSS:
+
+Per collegare un file CSS a un file HTML, si utilizza il tag `<link>` all'interno dell'elemento `<head>` del file HTML:
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+A parità di specificità, vale di più quello più in basso. Quello più specifico vale di più.
+
+## Specificità:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -646,9 +772,11 @@ A parita di specificita vale di più quello pèiù in basso quello più specific
     <h1 class="verdeh1 gialloh1">CIAO</h1>
 </body>
 </html>
+```
 
-css
+### CSS:
 
+```css
 h1 {
     color: red;
 }
@@ -660,34 +788,74 @@ h1 {
 .verdeh1 {
     color: rgb(0, 255, 76);
 }
+```
 
-HA PIu valore verdeh1 perche e l'ultimo
+In questo esempio, ha più valore `verdeh1` perché è l'ultimo dichiarato.
 
-TEXT alight con immagini e testi con un contenitore DIV esempio.
+## Text-align con immagini e testi:
 
-risalire e scendere dalle cartelle directories
+Per allineare testo e immagini all'interno di un contenitore `div`, si può utilizzare il CSS:
+
+```css
+div {
+    text-align: center;
+}
+```
+
+## Risalire e scendere nelle cartelle (directories):
+
+Per risalire di una directory e scendere in una directory specifica, si utilizza:
+
+```css
 url("../img/gatto-tenero.jpg")
+```
 
-## IMG Variables ci sono le slides
-come comprire un img in div
-size
-opacity
+## Immagini e Variabili:
 
-color
-image
-repeat REPEAT y solo verticale 
-position center?
-background  fixed attachment attaccata alla pagina
+### Come coprire un'immagine in un `div`:
 
-sip uo mettere tutto in un unica linea
+```css
+div {
+    background-image: url('path/to/image.jpg');
+    background-size: cover;
+    opacity: 0.8;
+}
+```
 
-DEFAULT TASPARENTE
+### Proprieta CSS:
 
-unita di misura
-%
-REM relativo all'HTML
- E 
- EM relativo al contenitore e x2 al font size base 16 diventa 32 es
-px
-vh
-vw
+- `background-color`
+- `background-image`
+- `background-repeat: repeat-y;` (solo verticale)
+- `background-position: center;`
+- `background-attachment: fixed;` (attaccata alla pagina)
+
+Si può mettere tutto in un'unica linea:
+
+```css
+div {
+    background: url('path/to/image.jpg') center/cover no-repeat fixed;
+}
+```
+
+### Valori Predefiniti e Unità di Misura:
+
+- **Default trasparente**: `opacity: 1;`
+- **Unità di misura**:
+  - `%`: Percentuale
+  - `rem`: Relativo all'elemento radice HTML
+  - `em`: Relativo al contenitore, es. `2em` al font size base 16 diventa 32px
+  - `px`: Pixel
+  - `vh`: Viewport height
+  - `vw`: Viewport width
+
+## Simboli e Scorciatoie:
+
+- **Backtick**:
+  - `alt + 96`: ``
+  - `option + 9` o `option + 8`: ``
+- **Tilde**:
+  - `alt + 126`: `~`
+  - `option + 5` su MacBook: `~`
+
+  .-- SEPARATORE ORGNIZZATO
