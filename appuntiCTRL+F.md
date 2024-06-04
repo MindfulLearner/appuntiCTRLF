@@ -490,12 +490,21 @@ Continua a esplorare e sperimentare con l'HTML per diventare un esperto nella cr
 
 ### CSS Basics
 
-#### Global Styles
+#### Global Styles guardare meglioo e capire meglio il border box
 ```css
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Per evitare spazi */
+    padding: 0; /* Per evitare spazi e margini */
+    box-sizing: border-box; /* Per evitare problemi di layout */
+    border box non midifcherà il padding
+    font-family: Arial, sans-serif; /* Per uniformare i font */
+
+    PERCHé QUANDO si mette il padding all'interno di un elemento, il padding si aggiunge al contenuto e quindi ci sono dei calcoli che vengono fatti. Se si mette box-sizing: border-box, il padding viene incluso nel calcolo del contenuto e quindi non ci sono problemi di layout.
+esempi qui:
+    https://www.w3schools.com/css/css3_box-sizing.asp
+
+```css
+
 }
 ```
 Ricordarsi sempre di azzerare margini e padding e impostare il box-sizing per evitare problemi di layout.
@@ -856,6 +865,77 @@ div {
   - `option + 9` o `option + 8`: ``
 - **Tilde**:
   - `alt + 126`: `~`
-  - `option + 5` su MacBook: `~`
+  - `option + 5` su MacBook: `~` 
 
-  .-- SEPARATORE ORGNIZZATO
+  .-- SEPARATORE ORGNIZZAZIONE ANCORA SISTEMARE c
+
+    ```css stili per il bordo
+stile dashed
+border: 1px dashed black;
+dotted linee puntinate
+double linee doppie
+groove linee incavate
+ridge linee rialzate
+inset linee incassate
+outset linee rialzate
+
+```css
+
+## Esempi di Bordi
+
+```css
+border è il bordo
+il primo px è il top, il secondo è il right, il terzo è il bottom, il quarto è il left1
+border-width: 10px 20px; è il top e il bottom 10px e il right e il left 20px
+```
+border-width;10px 20px 30px; è il top 10px, il right 20px, il bottom 30px, il left 20px
+```css
+border-width: 10px 20px 30px 40px; è il top 10px, il right 20px, il bottom 30px, il left 40px
+```css
+
+## padding è lo spazio tra il contenuto e il bordo e il margin è lo spazio tra il bordo e il contenitore
+    padding: 10px 20px 30px 40px;
+    il primo px è il top, il secondo è il right, il terzo è il bottom, il quarto è il left1
+    stessa progrssione per il margin
+```css
+
+
+## centrare un blocco margin 0 auto
+```css
+text align center centra solo il testo
+mentre per centrare un blocco si usa margin 0 auto
+margin: 0 auto;
+LINK https://www.w3schools.com/css/css_margin.asp
+```css
+
+
+## Utilizzo di `not` in CSS importante 
+
+```css
+se definisco margin 0 globale
+usare not
+esempio voglio usare not su tag li 
+allora scrivo ul li:not(.class) {
+    margin: 0;
+}
+https://www.w3schools.com/cssref/sel_not.php}
+
+```cs
+
+come usare .container per centrare un blocco
+.container {
+    margin: 0 auto;
+    width: 80%;
+```css
+
+
+##SELETTORI CSS
+```css
+selezione header img, selezion1, selezion2
+```css
+per selezionare tutto dentro header 
+header * {
+    color: red;
+}
+```css
+
