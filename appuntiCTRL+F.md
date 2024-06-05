@@ -937,5 +937,30 @@ per selezionare tutto dentro header
 header * {
     color: red;
 }
+```
+
+
+selettori avanzati 
+
+lo spzio mi va a selezionare tutti i figli a qualunque livello di discendenza
+ul li:first-child {
+    background-color: #f1f1f1;
+}
 ```css
 
+mentre il ul > li:first-child seleziona solo i figli diretti
+
+cosi seleziono il primo figlio di un ul senza prendere in considerazione i figli di ul
+ul > :first-child {
+    background-color: #f1f1f1;
+}
+```css
+
+se e presente ul > :firstchild {
+    background-color: #f1f1f1;
+}
+
+e ce un div allora ul > div:first-child non funzionerà 
+
+allora ul > li:first child non funzionerà
+```css
