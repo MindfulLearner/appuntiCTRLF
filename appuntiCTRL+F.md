@@ -497,11 +497,14 @@ Continua a esplorare e sperimentare con l'HTML per diventare un esperto nella cr
     padding: 0; /* Per evitare spazi e margini */
     box-sizing: border-box; /* Per evitare problemi di layout */
     border box non midifcherà il padding
+    // se si vuole si puo mettere anche il font-family
     font-family: Arial, sans-serif; /* Per uniformare i font */
 
     PERCHé QUANDO si mette il padding all'interno di un elemento, il padding si aggiunge al contenuto e quindi ci sono dei calcoli che vengono fatti. Se si mette box-sizing: border-box, il padding viene incluso nel calcolo del contenuto e quindi non ci sono problemi di layout.
 esempi qui:
     https://www.w3schools.com/css/css3_box-sizing.asp
+
+clearfix!! per i flexbox
 
 ```css
 
@@ -940,7 +943,10 @@ header * {
 ```
 
 
-selettori avanzati 
+## selettori avanzati 
+
+plate:last-child seleziona l'ultimo figlio di un elemento
+```css
 
 lo spzio mi va a selezionare tutti i figli a qualunque livello di discendenza
 ul li:first-child {
@@ -964,3 +970,74 @@ e ce un div allora ul > div:first-child non funzionerà
 
 allora ul > li:first child non funzionerà
 ```css
+
+poi ce ul > :nth-child(2) che seleziona il secondo figlio
+
+e eventualmente ul > :nth-child(odd) che seleziona i figli dispari
+
+o even per i pari 
+
+poi ce first-of-type e last-of-type
+prima del tuo tipo
+
+https://www.w3schools.com/cssref/css_selectors.php
+
+div + p seleziona il p che segue un div anche i div chiusi
+```css
+ci sono casi in cui non funziona oovero se ci sono altri elementi tra div e p quindi prima di p ci sono altri elementi
+la ~ seleziona tutti i p che seguono un div
+quindi prende tutta html o body e seleziona tutti i p che seguono un div
+
+
+selezione per attributo     [class] seleziona tutti gli elementi con un attributo class
+esempio [class="title"] seleziona tutti gli elementi con un attributo title che contiene la parola title
+
+attributo~= "word" seleziona tutti gli elementi con un attributo title che contiene la parola word
+esempio [title~="word"] seleziona tutti gli elementi con un attributo title che contiene la parola word
+
+alt click per modificare piu roba 
+
+## Float 
+ha origine in editoria, permette di far fluttuare un elemento a destra o a sinistra, non basta inline
+float non si usa in nessun caso per centrare un blocco
+!!IMPORTANTE!! 
+se si usano elementi float subito su usa il clearfix
+https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+FUNZIONA IL CLEAR BOTH MA NO
+ce anche il clear che permette di non avere elementi a destra o a sinistra
+  <div class="boxcontainerblue"></div>
+        
+        <div class="boxcontainerpink">dwadawdawdad</div>
+       
+        <div>estiae illo.</div>
+        
+        <div style="clear: both;"></div>
+
+si mette sotto entrambi altrimenti puo creare problemi. 
+ma non e semanticamente corretto ma funziona prende altezza di uno dei due 
+
+## overflow auto FUNZIONA MA NO
+si puo usare anche questo ma ce un problema loverflow che tutto cio che sborda dal contenmitore vedere 
+w3schools!!! TAGLI IL CONTENUTO! 
+
+::after e ::before
+per aggiungere contenuto prima e dopo un elemento
+DI TUTTI I TAG TUTTI I TAG
+si puo usare anche il clear both con after o before,  esempio .floatcontainer::after {content: ""; clear: both; display: table;}
+si usa display table perche se no non funziona perchè non è un elemento bloccante
+https://www.w3schools.com/cssref/sel_after.asp
+
+## Clearfix si applica al padre diretto 
+
+.html sempre il padre diretto per cil che abbiamo bisogno
+<div class"float-container clearfix" >
+.css
+clearfix::after {
+    content: "";
+    clear: both;
+    display: table; perche esempio il border deve occupare la riga intera
+}
+https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+
