@@ -1,0 +1,101 @@
+/* reset globale */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: pink;
+}
+
+h1 {
+    color: rgb(1, 24, 24);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* importante clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* main cards */
+
+main > .cards > .card {
+    float: left;
+    width: calc((100% /3) - 20px);
+    margin: 0 10px 20px;
+}
+main > .cards > .card:nth-child(3n+3) {
+    float: left;
+    width: calc((100% /3) - 20px);
+    margin-right: 0;
+}
+
+main > .cards > .card > *{
+    float: left;
+}
+
+main > .cards > .card > .img.container {
+   width: 100px;
+}
+
+main > .cards > .card > .info.container {
+    width: calc(100% - 100px);
+ }
+
+
+
+/* debugging */
+
+.debug .container{
+    background-color: blue;
+    border: 3px dashed greenyellow;
+    min-height: 100px;
+}
+.debug header {
+    background-color: rgb(2, 131, 77);
+    border: 3px dashed rgb(255, 47, 245);
+    min-height: 150px;
+}
+.debug main {
+    background-color: rgb(131, 6, 2);
+    border: 3px dashed rgb(47, 255, 245);
+    min-height: 200px;
+}
+.debug main > .cards {
+    background-color: rgb(107, 107, 184);
+    border: 3px dashed greenyellow;
+    min-height: 100px;
+}
+.debug main > .cards > .card {
+    background-color: blue;
+    border: 3px dashed greenyellow;
+    min-height: 100px;
+}
+
+.debug main > .cards > .card > .img.container {
+    background-color: rgb(0, 255, 179);
+    border: 3px dashed rgb(255, 47, 57);
+ }
+ 
+.debug main > .cards > .card > .info.container {
+    background-color: rgb(0, 247, 255);
+    border: 3px dashed rgb(255, 47, 220);
+  }

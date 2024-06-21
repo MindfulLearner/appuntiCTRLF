@@ -115,7 +115,7 @@
 Utilizzo di Copilot, cercare di fare le cose passo passo, CTRL I e chat e tasto destro e commenti,tener aperto i code, 
 ctrl + I /explain chioccola e slash possono essere utili
 
-  <!--ricarica pagina ogni 2 sec-->
+  <!--ricarica pagina ogni 2 sec reload ricarica-->
     <meta http-equiv="refresh" content="2">
 
 
@@ -1040,4 +1040,22 @@ clearfix::after {
 }
 https://www.w3schools.com/howto/howto_css_clearfix.asp
 
+## GLOSSARIO FLEXBOX
+https://www.w3schools.com/css/css3_flexbox.asp
 
+- justify-content: ; che ha a che fare con l'asse principale 
+- align-items: ; che ha a che fare con l'asse trasversale
+- flex-direction: ; che ha a che fare con l'asse principale
+- order: ; che ha a che fare con l'ordine degli elementi
+- aligh-self: ; che ha a che fare con l'asse trasversale
+- flex-wrap: ; che ha a che fare con il wrap degli elementi
+- flex-grow: ; che ha a che fare con la crescita degli elementi
+- flex-shrink: ; che ha a che fare con la riduzione degli elementi
+- flex-basis: ; che ha a che fare con la base degli elementi
+- flex: ; che ha a che fare con tutti i valori sopra
+- align-content: ; che ha a che fare con il contenuto degli elementi
+
+se bisogno cercare ogni singolo elemento su w3schools
+
+NTH-CHILD SWAG
+riga colonna riga colonna riga colonna
