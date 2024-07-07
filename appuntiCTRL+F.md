@@ -1059,3 +1059,34 @@ se bisogno cercare ogni singolo elemento su w3schools
 
 NTH-CHILD SWAG
 riga colonna riga colonna riga colonna
+
+MEDIAQUERY
+3[03:31, 21/06/2024] JOSH: riprodurre C
+[09:46, 21/06/2024] JOSH: sto facendo giusto HTMKL
+[10:08, 21/06/2024] JOSH: Media query?
+[10:12, 21/06/2024] JOSH: min heigh, calc
+[10:13, 21/06/2024] JOSH: ci sono altre modi?
+[10:34, 21/06/2024] JOSH: rem best practice
+[10:39, 21/06/2024] JOSH: desktop first
+
+mobiel first 
+
+abbreviazioni emmet.
+
+body.debug>header>div.header__container.aligner>div.header__logo>img[src="./assets/img/logo.png" alt="Logo"]^^nav.header__menu+div.header__hamburger-menu>i.fa-solid.fa-bars
+
+
+utilizza ^^ e + per creare un fratello e un figlio
+```css
+generera 
+<body class="debug">
+    <header>
+        <div class="header__container aligner">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" alt="Logo">
+            </div>
+            <nav class="header__menu"></nav>
+            <div class="header__hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+</body>
